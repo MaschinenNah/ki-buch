@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(220,220,220);
+}
+
+h1 {
+  font: 1.6rem monospace;
+  padding: 5px;
+}
+
+@media screen and (max-width: 499px) {
+  * {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  * {
+    max-width: 360px;
+  }
+}

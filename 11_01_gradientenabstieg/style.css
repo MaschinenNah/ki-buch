@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(220,220,220);
+}
+
+canvas {
+  display: block;
+  margin-bottom: 2px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 2px;
+}
+
+button{
+  width: calc(100% - 4px);
+  height: 40px;
+  margin: 2px;
+}
+
+/* alles, was keine checkbox ist :/ */
+#normal {
+  width: calc(50% - 4px);
+  height: 30px;
+  margin: 2px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 399px) {
+  * {
+    max-width: 360px;
+  }
+}

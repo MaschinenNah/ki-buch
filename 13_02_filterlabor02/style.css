@@ -1,0 +1,23 @@
+* { 
+  font: 1rem monospace;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(220, 220, 220);
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+label {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
