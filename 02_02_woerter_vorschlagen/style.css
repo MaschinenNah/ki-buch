@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(113, 110, 165);
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 250px;
+  resize: none;
+}
+
+button {
+  margin: 5px;
+}
+
+* {
+    @media screen and (max-width: 499px) {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  * {
+    max-width: 360px;
+  }
+}

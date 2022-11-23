@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font: 0.95rem monospace;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(169, 255, 255);
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h1, input, textarea, label, select, button {
+  margin: 2px;
+}
+
+button {
+  width: calc(50% - 4px);
+  height: 30px;
+}
+
+#labelschmal {
+  display: inline-block;
+  width: calc(25% - 4px);
+}
+
+label {
+  display: inline-block;
+  width: calc(33% - 4px);
+}
+
+input {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  width: calc(25% - 4px);
+  height: 30px;
+}
+
+select {
+  width: calc(17% - 4px);
+  height: 30px;
+}
+
+textarea {
+  background-color: white;
+  font-size: 0.7rem;
+  color: rgb(0, 0, 0);
+  width: calc(100% - 4px);
+  height: 120px;
+  resize: none;
+}
+
+@media screen and (max-width: 399px) {
+  * {
+    max-width: 360px;
+  }
+}

@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(113, 110, 165);
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2px;
+}
+
+textarea {
+  width: calc(100% - 4px);
+  height: 420px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  resize: none;
+  margin: 2px;
+}
+
+#legende {
+  width: calc(100% - 4px);
+  height: 20px;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.68rem;
+  margin-bottom: 4px;
+}
+
+label {
+  width: calc(50% - 4px);
+  margin: 2px;
+  display: inline-block;
+}
+
+button, select {
+  width: calc(50% - 4px);
+  height: 40px;
+  margin: 2px;
+}
+
+@media screen and (max-width: 499px) {
+  * {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  * {
+    max-width: 360px;
+  }
+}

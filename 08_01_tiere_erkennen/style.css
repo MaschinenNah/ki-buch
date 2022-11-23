@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(169, 255, 255);
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+textarea {
+  width: calc(100% - 10px);
+  height: 510px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  resize: none;
+  margin: 5px;
+}
+
+label, select {
+  width: calc(50% - 10px);
+  height: 40px;
+  margin: 5px;
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 499px) {
+  * {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  * {
+    max-width: 360px;
+  }
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(113, 110, 165);
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 5px;
+}
+
+label {
+  width: calc(50% - 10px);
+  margin: 5px;
+  display: inline-block;
+}
+
+input {
+  width: calc(50% - 10px);
+  height: 40px;
+  margin: 5px;
+}
+
+textarea {
+  width: calc(100% - 10px);
+  height: 250px;
+  margin: 5px;
+  resize: none;
+  background-color: white;
+  color: black;
+}
