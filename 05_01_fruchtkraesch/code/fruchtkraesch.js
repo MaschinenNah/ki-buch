@@ -137,41 +137,51 @@ class Spielzustand {
     for (let zeile = 0; zeile < this.nZeilen; zeile++) {
       for (let spalte = 0; spalte < this.nSpalten; spalte++) {
         if (!this.farbe([zeile, spalte]) == 0) {
-          kandidaten.push([zeile, spalte]);  
+          kandidaten.push([zeile, spalte]);
         }
       }
     }
     
     // Wir starten bei Position 1
-    let position = 0;
-    let kandidat = kandidaten[position];
+    let kandidat = kandidaten.shift();
     
     // Solange es noch Kandidaten gibt...
-    while (kandidat){
+    while (kandidaten.length > 0){
       const gleichfarbigeGruppe = this.gleichfarbigeGruppe(kandidat);
+
       // Wenn der Kandidat zu einer gleichfarbigen Gruppe gehört...
       if (gleichfarbigeGruppe) {
         // Den Kandidaten zu den möglichen Zügen hinzufügen...
         this.moeglicheZuege.push(gleichfarbigeGruppe);
         potential += gleichfarbigeGruppe.length;
-        // Alle Zellen der gleichfarbigen Gruppe aus der Kandidatenliste
-        // entfernen, weil sonst Züge mit identischem Ergebnis mehrfach
-        // vorkommen würden
-        kandidaten = kandidaten.filter(zug => {
-          for (let zelle of gleichfarbigeGruppe) {
-            if (this.koordinatenSindGleich(zelle, zug)) {
-              return false;
-            }
-          }
-          return true;
-        });
+
+        this.entferneAbgearbeiteteKandidaten(kandidaten, gleichfarbigeGruppe);        
       }
-      position += 1;
-      kandidat = kandidaten[position];
+      kandidat = kandidaten.shift();
     }
     // Potential aktualisieren (Potential = Punkte, die man bekommen würde, 
     // wenn alle gültigen Züge gleichzeitig ausgeführt würden)
     this.potential = potential;
+  }
+
+  // Alle Zellen der gleichfarbigen Gruppe aus der Kandidatenliste
+  // entfernen, weil sonst Züge mit identischem Ergebnis mehrfach
+  // vorkommen würden
+  entferneAbgearbeiteteKandidaten(kandidaten, gleichfarbigeGruppe) {
+    let entfernen = [];
+    for (let kandidat of kandidaten) {
+      for (let koordinatenpaar of gleichfarbigeGruppe) {
+        if (this.koordinatenSindGleich(kandidat, koordinatenpaar)) {
+          entfernen.push(kandidat);
+        }
+      }
+    }
+
+    for (let kandidat of entfernen) {
+      const idx = kandidaten.indexOf(kandidat);
+      kandidaten.splice(idx, 1);
+    }
+    
   }
   
   // Stößt die Suche nach einer gleichfarbigen Gruppe an, ausgehend von 
