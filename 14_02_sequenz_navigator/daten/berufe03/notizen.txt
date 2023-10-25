@@ -1,0 +1,20 @@
+neuer generator (auch bestimmte artikel bei den objekten)
+
+    'batch_size': 500,
+    'dropout': 0,
+    'epochs': 7,
+    'lernrate': 0.01,
+    'loss': 'binary_crossentropy',
+    'n_verdeckte_neuronen': 30,
+    'seed': 739,
+    'window_size': 3
+
+subjekt_volltreffer 0.94
+subjekt_fails 0.0
+verb_volltreffer 0.641
+verb_fails 0.109
+subjekt_verb_volltreffer 0.93
+objekt_verb_volltreffer 0.39
+verb_adjektiv_volltreffer 0.52
+subjekt_objekt_volltreffer 0.38
+GESAMT 0.6153333333333334

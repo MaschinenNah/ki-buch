@@ -1,0 +1,19 @@
+GUI:
+
+Die Einbettung sollte besser zentriert starten.
+Evtl. x und y getrennt skalieren und ggf. Verzerrung in Kauf nehmen?
+
+Sequenzfeld Selection aufheben bei Hintergrund-Klick.
+(Im Moment muss man dafür links neben die Einbettung klicken...)
+
+Zurücksetzen-Button für die Sequenzfelder Einbinden.
+(Im Moment muss man dafür links neben die Einbettung klicken.)
+(Problem ist im Moment die Callback der Sequenzfelder)
+
+Reintippen in Sequenzfelder verbieten
+
+Später: Eingetippte Sätze vektorisieren...
+
+Es sollte deutlich besser sichtbar sein, welches Sequenzfeld ausgewählt ist.
+
+Es wäre schön, wenn man das bekannte vokabular angeboten bekäme.

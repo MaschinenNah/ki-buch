@@ -1,0 +1,97 @@
+
+* {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(255, 211, 129);
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2px;
+}
+
+label {
+  width: calc(25% - 4px);
+  margin: 2px;
+  display: inline-block;
+}
+
+button, select, input {
+  width: calc(25% - 4px);
+  height: 30px;
+  margin: 2px;
+}
+
+.labelBreit {
+  width: calc(50% - 4px);
+  margin: 2px;
+  display: inline-block;
+}
+
+.inputSchmal {
+  width: calc(12.5% - 4px);
+  height: 30px;
+  margin: 2px;
+}
+
+.inputBreit {
+  width: calc(33% - 3px);
+  height: 150px;
+  margin: 2px;
+  font: 0.8rem monospace;
+}
+
+.labelSequenz {
+  width: calc(33% - 4px);
+  height: 30px;
+  margin: 2px;
+
+}
+
+.slider {
+  width: calc(37.5% - 4px);
+  height: 10px;
+}
+
+.textareaOben {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  width: calc(100% - 4px);
+  height: 41%;
+  font-size: 1rem;
+  resize: none;
+}
+
+textarea {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: calc(100% - 4px);
+    height: 52%;
+    font-size: 1rem;
+    resize: none;
+}
+
+.inputMarkiert {
+    border:  solid 5px rgb(255, 166, 0);
+    width: calc(33% - 3px);
+    height: 150px;
+    margin: 2px;
+    font: 0.8rem monospace;
+}
+
+
+.selectBreit {
+  width: calc(50% - 4px);
+  height: 30px;
+  margin: 2px;
+a

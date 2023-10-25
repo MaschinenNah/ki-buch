@@ -1,0 +1,19 @@
+ 'batch_size': 1000,
+ 'epochs': 7,#15,
+ 'lernrate': 0.005,
+ 'loss': 'binary_crossentropy',
+ 'dropout': 0,
+ 'n_verdeckte_neuronen': 20,
+ 'seed': 987,
+ 'window_size': 4
+
+
+subjekt_volltreffer 0.89
+subjekt_fails 0.09
+verb_volltreffer 0.869
+verb_fails 0.114
+subjekt_verb_volltreffer 0.32
+objekt_verb_volltreffer 0.24
+verb_adjektiv_volltreffer 0.3
+subjekt_objekt_volltreffer 0.34
+GESAMT 0.45916666666666656
