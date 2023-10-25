@@ -1,0 +1,8 @@
+Transformations Trefferquoten:
+Subjekt-Genus              98 %
+Verb-Konjugationen         61 %
+Subjekt-Verb-Zuordnungen   86 %
+Objekt-Verb-Zuordnungen    28 %
+Verb-Adjektiv-Zuordnungen  36 %
+Subjekt-Objekt-Zuordnungen 29 %
+MITTELWERT                 54 %

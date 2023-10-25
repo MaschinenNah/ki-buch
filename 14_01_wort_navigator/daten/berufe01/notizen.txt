@@ -1,0 +1,8 @@
+'batch_size': 1000,
+'epochs': 7,#15,
+'lernrate': 0.005,
+'loss': 'binary_crossentropy',
+'dropout': 0,
+'n_verdeckte_neuronen': 20,
+'seed': 987,
+'window_size': 4
